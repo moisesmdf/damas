@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador Financeiro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerenciador Financeiro</h1>
+
+        <div class="balance-container">
+            <h3>Saldo Total</h3>
+            <h2 id="balance">R$ 0.00</h2>
+        </div>
+
+        <div class="income-expense-container">
+            <div>
+                <h3>Entradas</h3>
+                <p id="income" class="money plus">R$ 0.00</p>
+            </div>
+            <div>
+                <h3>Saídas</h3>
+                <p id="expense" class="money minus">R$ 0.00</p>
+            </div>
+        </div>
+
+        <h3>Adicionar Transação</h3>
+        <form id="transaction-form">
+            <input type="text" id="transaction-name" placeholder="Nome da transação" required>
+            <input type="number" id="transaction-amount" placeholder="Valor (positivo ou negativo)" required>
+            <button type="submit">Adicionar Transação</button>
+        </form>
+
+        <h3>Histórico</h3>
+        <ul id="transaction-list"></ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
